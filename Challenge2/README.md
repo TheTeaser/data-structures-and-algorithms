@@ -2,7 +2,7 @@
 Insert a value into the middle of an array.
 
 ## Whiteboard Process
-![Alt text](Screenshot%202023-04-05%20120547.png)
+![Alt text](CC2.png)
 
 ## Approach & Efficiency
 In this solution I've used only the insert property to add on an array in a specific position.
