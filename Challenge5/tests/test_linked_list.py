@@ -3,7 +3,7 @@ from LinkedList.linked_list import LinkedList
 
 
 def test_linked_list():
-    actual =  str(LinkedList())
+    actual = str(LinkedList())
     expected = "Empty Linked List."
     assert actual == expected
 
@@ -12,7 +12,7 @@ def test_insert():
     insert_test = LinkedList()
     insert_test.insert("A")
     actual = str(insert_test)
-    expected = "A --->  Null"    
+    expected = "A ---> Null"
     assert actual == expected
 
 
@@ -21,17 +21,46 @@ def test_search(ll):
     expected = "True"
     assert actual == expected
 
-
 def test_return_all_nodes(ll):
-
     actual = str(ll)
-    expected = "C ---> B ---> A --->  Null"    
+    expected = "D ---> C ---> B ---> A ---> Null"
     assert actual == expected
+
+# tests for append(), insert_before(), insert_after() & delete() methods:
+
+def test_append(ll):
+    ll.append("E")
+    actual = str(ll)
+    expected = "D ---> C ---> B ---> A ---> E ---> Null"
+    assert actual == expected
+
+
+def test_insert_before(ll):
+    ll.insert_before("B", "X")
+    actual = str(ll)
+    expected = "D ---> C ---> X ---> B ---> A ---> Null"
+    assert actual == expected
+
+
+def test_insert_after(ll):
+    ll.insert_after("B", "Y")
+    actual = str(ll)
+    expected = "D ---> C ---> B ---> Y ---> A ---> Null"
+    assert actual == expected
+
+
+def test_delete(ll):
+    ll.delete("B")
+    actual = str(ll)
+    expected = "D ---> C ---> A ---> Null"
+    assert actual == expected
+
 
 @pytest.fixture
 def ll():
     ll = LinkedList()
-    ll.insert("A") 
-    ll.insert("B") 
-    ll.insert("C") 
+    ll.insert("A")
+    ll.insert("B")
+    ll.insert("C")
+    ll.insert("D")
     return ll
