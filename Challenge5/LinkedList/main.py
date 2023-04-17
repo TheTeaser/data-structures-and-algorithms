@@ -6,7 +6,13 @@ my_list.insert(1)
 my_list.insert(2)
 my_list.insert(3)
 
-print(my_list)
+# New methods tests:
+my_list.append(5)
+my_list.insert_before(5,4)
+my_list.insert_after(5,6)
+my_list.delete(1)
+#
 
+print(my_list)
 print(my_list.includes(2))
-print(my_list.includes(4))
+print(my_list.includes(1))

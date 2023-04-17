@@ -1,7 +1,18 @@
 # Challenge Title: Singly LinkedList
 This is an implementation of using singly linked list in python.
 ## Whiteboard Process
-None.
+
+**Insert:**
+![Alt text](assets/insert.png)
+
+**Append:**
+![Alt text](assets/append.png)
+
+**Insert Before:**
+![Alt text](assets/insert%20before.png)
+
+**Insert After:**
+![Alt text](assets/array%20after.png)
 
 ## Approach & Efficiency
 O(N), as some function needs to go throught an iterations.
