@@ -55,6 +55,27 @@ def test_delete(ll):
     expected = "D ---> C ---> A ---> Null"
     assert actual == expected
 
+# Tests for kthFromEnd()
+
+def test_kthFromEnd01(ll):
+    expected = "A"
+    actual = ll.kthFromEnd(1)
+    assert actual == expected
+
+def test_kthFromEnd02(ll):
+    expected = "C"
+    actual = ll.kthFromEnd(3)
+    assert actual == expected
+
+
+def test_kthFromEnd03(ll):
+    expected = "Error! You have inserted an index bigger than or equal to the list's whole length, please try again."
+    with pytest.raises(ValueError, match=expected):
+        ll.kthFromEnd(6)
+
+
+
+
 
 @pytest.fixture
 def ll():
