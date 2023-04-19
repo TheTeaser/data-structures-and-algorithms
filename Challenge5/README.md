@@ -14,6 +14,9 @@ This is an implementation of using singly linked list in python.
 **Insert After:**
 ![Alt text](assets/array%20after.png)
 
+**kth From End:**
+![Alt text](assets/kthFromEnd.png)
+
 ## Approach & Efficiency
 O(N), as some function needs to go throught an iterations.
 
