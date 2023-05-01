@@ -17,6 +17,9 @@ This is an implementation of using singly linked list in python.
 **kth From End:**
 ![Alt text](assets/kthFromEnd.png)
 
+**Zip List:**
+![Alt text](assets/zip%20Lists.png)
+
 ## Approach & Efficiency
 O(N), as some function needs to go throught an iterations.
 
