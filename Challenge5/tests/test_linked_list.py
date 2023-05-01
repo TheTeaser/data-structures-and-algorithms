@@ -73,8 +73,21 @@ def test_kthFromEnd03(ll):
     with pytest.raises(ValueError, match=expected):
         ll.kthFromEnd(6)
 
-
-
+def test_zipLists():
+    ll1 = LinkedList()
+    ll1.insert(1)
+    ll1.insert(2)
+    ll1.insert(3)
+    ll1.insert(4)
+    ####
+    ll2 = LinkedList()
+    ll2.insert('a')
+    ll2.insert('b')
+    ll2.insert('c')
+    ll2.insert('d')
+    actual =str(LinkedList.zipLists(ll1, ll2))
+    excepted = "4 ---> d ---> 3 ---> c ---> 2 ---> b ---> 1 ---> a ---> Null"
+    assert actual == excepted
 
 
 @pytest.fixture
@@ -85,3 +98,12 @@ def ll():
     ll.insert("C")
     ll.insert("D")
     return ll
+
+@pytest.fixture
+def ll2():
+    ll2 = LinkedList()
+    ll2.insert("1")
+    ll2.insert("2")
+    ll2.insert("3")
+    ll2.insert("4")
+    return ll2

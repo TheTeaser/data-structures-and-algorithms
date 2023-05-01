@@ -154,3 +154,24 @@ class LinkedList:
             current = current.next
 
         return current.value
+
+    #Challenge 8 LinkedList Zip:
+
+    def zipLists(list1, list2):
+
+        current1 = list1.head
+        current2 = list2.head
+        nList=LinkedList()
+        while True:
+            if current1 :
+                nList.append(current1.value)
+                current1=current1.next
+            if current2:
+                nList.append(current2.value)
+                current2=current2.next
+
+            if not current1 and not current2:
+                break
+
+        return nList
+                
