@@ -174,4 +174,17 @@ class LinkedList:
                 break
 
         return nList
-                
+    
+    #Challenge 9 Reverse a LinkedList:
+
+    def reverse_LinkedList(self):
+        
+        prev = None
+        current = self.head
+        while current is not None:
+            next = current.next
+            current.next = prev
+            prev= current
+            current = next
+        self.head = prev
+        return self.head
