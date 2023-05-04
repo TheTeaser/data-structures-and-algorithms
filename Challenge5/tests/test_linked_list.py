@@ -89,6 +89,12 @@ def test_zipLists():
     excepted = "4 ---> d ---> 3 ---> c ---> 2 ---> b ---> 1 ---> a ---> Null"
     assert actual == excepted
 
+# def test_reverse(ll):
+#     actual=str(ll.reverse_LinkedList())
+#     expected= "D ---> C ---> B ---> A ---> Null"
+    
+#     assert actual == expected
+
 
 @pytest.fixture
 def ll():

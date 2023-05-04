@@ -12,9 +12,10 @@ my_list.insert_before(5,4)
 my_list.insert_after(5,6)
 my_list.delete(1)
 #
-
+x=my_list.reverse_LinkedList()
 print(my_list)
 print(my_list.includes(2))
 print(my_list.includes(1))
-print(my_list.kthFromEnd(0))
+# print(my_list.kthFromEnd(0))
 print(my_list.middle_Value())
+# print(str(x))
