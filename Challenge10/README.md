@@ -1,11 +1,13 @@
-# Code Challenge: Class 10
-Write a code for a Stack and Queue with multiple functionalities such as (Push(), Pop(), Enqueue(), Dequeue() & is_Empty())
+# Challenge Title: Stacks & Queues
+This is an implementation of using Stack & Queues in python.
 ## Whiteboard Process
-![Alt text](Stack&Queue.png)
-## Approach & Efficiency
-Time Complexity = O(N)
 
-Space Complecity = O(1) 
+**Stack & Queues**
+![Alt text](Stack&Queue.png)
+**PseudoQueue**
+![Alt text](PseudoQueue.png)
+## Approach & Efficiency
+O(N), as some function needs to go throught an iterations.
 
 ## Solution
-Run pytest or insert the wanted values in main.py file.
+Simply pytest to test the program, or run it to show the printed linkedlist.

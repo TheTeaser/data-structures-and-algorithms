@@ -3,6 +3,7 @@ import pytest
 from Challenge10.Stack import Stack
 from Challenge10.Queue import Queue
 from Challenge10.Node import Node
+from Challenge10.Queue import PseudoQueue
 
 
 ### Stack Testing:
@@ -31,7 +32,7 @@ def test_peek():
 
 def test_empty_stack():
     stack = Stack()
-    expected = "This is an empty stack!"
+    expected = None
     assert expected == stack.peek()
 
 
@@ -71,4 +72,23 @@ def test_empty_queue():
     expected = None
     assert actual == expected
 
+### PseudoQueue Testing:
 
+def test_enqueue():
+    pq = PseudoQueue()
+    pq.enqueue(10)
+    pq.enqueue(15)
+    pq.enqueue(20)
+    actual= str(pq.first_stack) 
+    expected = "[10]->[15]->[20]"
+    assert actual == expected
+
+
+
+def test_dequeue():
+    queue = Queue()
+    queue.enqueue(7)
+    queue.enqueue(100)
+    actual = queue.dequeue()
+    expected = 7
+    assert expected == actual

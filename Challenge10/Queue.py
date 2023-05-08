@@ -1,6 +1,7 @@
 from .Node import Node
+from .Stack import Stack
 
-class Queue():
+class Queue:
     def __init__(self):
         self.front = None
         self.rear = None
@@ -36,3 +37,26 @@ class Queue():
             return True
         else:
             return False
+    
+    
+
+# CC11 PseudoQueue:
+
+
+class PseudoQueue:
+    def __init__(self):
+        self.first_stack = Stack()
+        self.second_stack = Stack()
+
+    def enqueue(self, value):
+        while self.first_stack.top is not None:
+            self.second_stack.push(self.first_stack.pop())
+        self.first_stack.push(value)
+        while self.second_stack.top is not None:
+            self.first_stack.push(self.second_stack.pop())
+
+    def dequeue(self):
+        if self.first_stack.is_empty():
+            raise Exception("Cannot dequeue from an empty queue")
+
+        return self.first_stack.pop().value
