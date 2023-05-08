@@ -5,31 +5,27 @@ class Stack:
         self.top = None
 
     def push(self, value):
-        node = Node(value)
-        if self.top:
-            node.next = self.top
-            self.top = node
-        else:
-            self.top = node
+        new_node = Node(value)
+        new_node.next = self.top
+        self.top = new_node
 
     def pop(self):
-        try:
-            deleted_value = self.top.value
-            temp = self.top.next
-            self.top = temp
-            temp.next = None
-            return deleted_value
-        except:
-            return "This is an empty stack!"
+        if not self.top:
+            raise Exception("This is an empty stack!")
+        popped = self.top
+        self.top = popped.next
+        popped.next = None
+        return popped.value
 
     def peek(self):
-        try:
-            return self.top.value
-        except:
-            return "This is an empty stack!"
+        if not self.top:
+            return None
+        return self.top.value
 
-    def is_Empty(self):
-        if self.top == None:
-            return False
-        else:
-            return True
+    def __str__(self):
+        current = self.top
+        output = ''
+        while current:
+            output += f'[{str(current.value)}]->'
+            current = current.next
+        return output[:-2]

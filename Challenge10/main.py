@@ -1,5 +1,7 @@
 from Stack import Stack
 from Queue import Queue
+from Queue import PseudoQueue
+
 
 stack1 = Stack()
 
@@ -27,3 +29,6 @@ print("size",stack1.get_size())
 # print(queue1.dequeue())
 # print(queue1.dequeue())
 # print(queue1.dequeue())
+# queue = PseudoQueue()
+# queue.enqueue(5)
+# print(queue)
