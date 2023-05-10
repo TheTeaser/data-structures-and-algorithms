@@ -4,6 +4,7 @@ from Challenge10.Stack import Stack
 from Challenge10.Queue import Queue
 from Challenge10.Node import Node
 from Challenge10.PseudoQueue import PseudoQueue
+from Challenge10.animal_shelter import AnimalShelter
 
 ### Stack Testing:
 
@@ -91,3 +92,33 @@ def test_dequeue():
     actual = queue.dequeue()
     expected = 7
     assert expected == actual
+
+### Animal Shelter testing:
+
+def test_enqueue_dequeue():
+    shelter = AnimalShelter()
+
+    shelter.enqueue({"species": "cat", "name": "Luna"})
+    shelter.enqueue({"species": "dog", "name": "Buddy"})
+    
+    animal1 = {
+        "species" : "cat",
+        "name": "Whiskers"
+    }
+
+    animal2 = {
+        "species" : "dog",
+        "name": "Rocky"
+    }
+
+    shelter.enqueue(animal1)
+    shelter.enqueue(animal2)
+
+    actual1 = shelter.dequeue("cat")
+    expected1 = {"species": "cat", "name": "Luna"}
+    assert actual1 == expected1
+
+    actual2 = shelter.dequeue("dog")
+    expected2 = {"species": "dog", "name": "Buddy"}
+    assert actual2 == expected2
+
