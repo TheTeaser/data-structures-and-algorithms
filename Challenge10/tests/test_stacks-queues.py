@@ -3,8 +3,7 @@ import pytest
 from Challenge10.Stack import Stack
 from Challenge10.Queue import Queue
 from Challenge10.Node import Node
-from Challenge10.Queue import PseudoQueue
-
+from Challenge10.PseudoQueue import PseudoQueue
 
 ### Stack Testing:
 
