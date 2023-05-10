@@ -6,6 +6,9 @@ This is an implementation of using Stack & Queues in python.
 ![Alt text](Stack&Queue.png)
 **PseudoQueue**
 ![Alt text](PseudoQueue.png)
+**Animal Shelter**
+![Alt text](AnimalShelter.png)
+
 ## Approach & Efficiency
 O(N), as some function needs to go throught an iterations.
 
