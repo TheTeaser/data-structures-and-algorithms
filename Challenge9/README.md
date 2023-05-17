@@ -5,4 +5,4 @@ Write a way to reverse a LinkedList
 ## Approach & Efficiency
 Big O= O(N).
 ## Interview Document
-[Here!](https://docs.google.com/spreadsheets/d/1CqCYJi-mMwmWFgKbm7t34_2KAp1cFAsECDXMBqUmB7k/edit?usp=sharing)
+[Here!](https://docs.google.com/spreadsheets/d/1-ncERX6v6SvPDXGayOcZI94l30qRxgBrkQFHlIMUShs/edit?usp=sharing)
