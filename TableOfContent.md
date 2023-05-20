@@ -10,3 +10,6 @@
 | Challenge 9 | *[Reverse LinkedList](./Challenge9/README.md)* |
 | Challenge 10 - 12 | *[Stacks & Queues ](./Challenge10/README.md)* |
 | Challenge 13 | *[Multi-bracket Validation](./Challenge13/README.md)* |
+| Challenge 14 | *[Max Stack](./Challenge14/README.md)* |
+| Challenge 15 | *[Trees](./Challenge15/README.md)* |
+ 
