@@ -31,7 +31,10 @@ def test_true(BST):
     assert BST.Contains(8) == True
 
 def test_false(BST):
-    assert BST.Contains(9) == False    
+    assert BST.Contains(9) == False
+
+def test_find_maximum_value(BST):
+    assert BST.find_maximum_value() == 8    
 
 @pytest.fixture
 def BST():
