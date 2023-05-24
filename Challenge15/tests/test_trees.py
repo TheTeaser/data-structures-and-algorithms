@@ -1,5 +1,5 @@
 import pytest
-from Challenge15.trees import Binary_Search_Tree , Binary_Tree, Node
+from Challenge15.trees import Binary_Search_Tree , Binary_Tree, Node, breadth_first
 
 def test_instantiate_empty_tree():
     tree= Binary_Tree()
@@ -34,16 +34,21 @@ def test_false(BST):
     assert BST.Contains(9) == False
 
 def test_find_maximum_value(BST):
-    assert BST.find_maximum_value() == 8    
+    assert BST.find_maximum_value() == 8 
+
+def test_breadth_first(BST):
+    actual = breadth_first(BST)
+    expected = [5, 3, 7, 2, 4, 6, 8]
+    assert actual == expected
 
 @pytest.fixture
 def BST():
-    BST= Binary_Search_Tree()
-    BST.Add(5)
-    BST.Add(3)
-    BST.Add(2)
-    BST.Add(4)
-    BST.Add(7)
-    BST.Add(6)
-    BST.Add(8)
-    return BST
+    bst = Binary_Search_Tree()
+    bst.Add(5)
+    bst.Add(3)
+    bst.Add(2)
+    bst.Add(4)
+    bst.Add(7)
+    bst.Add(6)
+    bst.Add(8)
+    return bst
