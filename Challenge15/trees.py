@@ -1,3 +1,5 @@
+from .Queue import Queue
+
 class Node:
     def __init__(self, value):
         self.value = value
@@ -128,3 +130,24 @@ class Binary_Search_Tree(Binary_Tree):
         else:
             return self.recursive_search(node.right, value)
 
+def breadth_first(tree):
+    """
+    Perform a breadth-first traversal of the binary tree and return a list of values.
+    """
+    if tree.root is None:
+        raise ValueError("The tree is empty.")
+
+    result = []
+    queue = Queue()
+    queue.enqueue(tree.root)
+
+    while not queue.is_Empty():
+        node = queue.dequeue()
+        result.append(node.value)
+
+        if node.left:
+            queue.enqueue(node.left)
+        if node.right:
+            queue.enqueue(node.right)
+
+    return result

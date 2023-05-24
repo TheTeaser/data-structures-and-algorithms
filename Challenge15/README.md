@@ -8,6 +8,10 @@
 
 ![Alt text](tree.png)
 
+## Breadth First Traversal:
+
+![Alt text](BFT.png)
+
 ## Binary Tree algorithm:
 
 ![Alt text](BTnew.png)
