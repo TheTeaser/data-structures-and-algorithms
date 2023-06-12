@@ -11,5 +11,5 @@
 | Challenge 10 - 12 | *[Stacks & Queues ](./Challenge10/README.md)* |
 | Challenge 13 | *[Multi-bracket Validation](./Challenge13/README.md)* |
 | Challenge 14 | *[Max Stack](./Challenge14/README.md)* |
-| Challenge 15 | *[Trees](./Challenge15/README.md)* |
- 
+| Challenge 15-17 | *[Trees](./Challenge15/README.md)* |
+| Challenge 26 | *[Insertion Sort](./Challenge26/README.md)* |
