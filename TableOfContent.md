@@ -13,3 +13,4 @@
 | Challenge 14 | *[Max Stack](./Challenge14/README.md)* |
 | Challenge 15-17 | *[Trees](./Challenge15/README.md)* |
 | Challenge 26 | *[Insertion Sort](./Challenge26/README.md)* |
+| Challenge 27 | *[Merge Sort](./Challenge27/README.md)* |
