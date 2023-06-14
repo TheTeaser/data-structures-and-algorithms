@@ -32,25 +32,74 @@ The Insert function takes a sorted array and a value as input, then it finds the
 
  We will sort the following array: [8,4,23,42,16,15]
 
-We start by passing the first element:
-```
-Sorted array: []
-Value to insert: 8
-```
-Then the second one untill the whole input is done:
-```
-Sorted array: [8]
-Value to insert: 4
-```
-
--|
-
-
-\ /
+Initial State:
 
 ```
-Sorted array: [4, 8, 16, 23, 42]
-Value to insert: 15
+sorted: []
+input: [8, 4, 23, 42, 16, 15]
 ```
+
+Iteration 1:  
+
+We start with an empty sorted array and append the first element from the input array, which is (8).
+```
+sorted: [8]
+input: [4, 23, 42, 16, 15]
+```
+Iteration 2:
+
+First we compare the second element of the input array (4) with the elements in the sorted array.
+Since (4) is less than (8), we shift (8) to the right and insert (4) at the beginning of the sorted array.
+```
+sorted: [4, 8]
+input: [23, 42, 16, 15]
+```
+
+Iteration 3:
+
+We compare the third element of the input array (23) with the elements in the sorted array;
+
+Since (23) is greater than (8) and (4), we insert (23)  8 in the right of (8) in the sorted array.
+```
+sorted: [4, 8, 23]
+input: [42, 16, 15]
+```
+Iteration 4:
+
+Same as in the previous iteration, (42) is bigger than all the elements in the sorted array, thus we append it on the right of (23)
+
+```
+sorted: [4, 8, 23, 42]
+input: [16, 15]
+```
+Iteration 5:
+
+We iterate through each element starting from the first element of the sorted array and compare the input element (16), with the sorted array,since (16) is bigger than both (4) and (8) but smaller than (23); therefore, we will set (16) on the place of (23) and append the rest (i+1) on their spot.
+```
+sorted: [4, 8, 16, 23, 42]
+input: [15]
+```
+Iteration 6:
+
+Same as the previous iteration.
+```
+sorted: [4, 8, 15, 16, 23, 42]
+input: []
+```
+Sorting Complete:
+
+Sorted array: [4, 8, 15, 16, 23, 42]
+
+## Big O:
+
+Time Complexity:  O(n^2)
+
+Space Complexity:  O(1)
+
+## Implementation: 
 
 For the implementation, kindly check [Here!](insertion_sort.py) 
+
+## Testing:
+
+For the testing, kindly check [Here!](./tests/test_insertionSort.py) 
