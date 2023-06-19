@@ -19,3 +19,8 @@
 | Challenge 26 | *[Insertion Sort](./Challenge26/README.md)* |
 | Challenge 27 | *[Merge Sort](./Challenge27/README.md)* |
 | Challenge 28 | *[Sort Compairson](./Challenge28/README.md)* |
+=======
+
+## Author: 
+**Rakan M. Al-Madani**
+
