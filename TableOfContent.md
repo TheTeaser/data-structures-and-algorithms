@@ -14,3 +14,5 @@
 | Challenge 15-17 | *[Trees](./Challenge15/README.md)* |
 | Challenge 26 | *[Insertion Sort](./Challenge26/README.md)* |
 | Challenge 27 | *[Merge Sort](./Challenge27/README.md)* |
+| Challenge 28 | *[Movie Sort](./Challenge28/README.md)* |
+| Challenge 29 | *[Insertion Sort Interview](./Challenge29/README.md)* |
