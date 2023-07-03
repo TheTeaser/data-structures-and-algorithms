@@ -1,4 +1,7 @@
 def repeated_word(string):
+    '''
+    This function finds the first repeated word in a given argument.
+    '''
     words = string.lower().split()
     word_count = {}
     
