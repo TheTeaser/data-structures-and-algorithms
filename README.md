@@ -19,6 +19,11 @@
 | Challenge 26 | *[Insertion Sort](./Challenge26/README.md)* |
 | Challenge 27 | *[Merge Sort](./Challenge27/README.md)* |
 | Challenge 28 | *[Sort Compairson](./Challenge28/README.md)* |
+| Challenge 29 | *[Insertion Sort Interview](./Challenge29/README.md)* |
+| Challenge 30 | *[Hash Table](./Challenge30/README.md)* |
+| Challenge 31 | *[Hash Table Repeated Word](./Challenge31/README.md)* |
+| Challenge 32 | *[Intersection Tree](./Challenge32/README.md)* |
+=======
 =======
 
 ## Author: 
