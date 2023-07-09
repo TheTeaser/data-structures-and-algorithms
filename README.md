@@ -25,3 +25,7 @@
 | Challenge 32 | *[Intersection Tree](./Challenge32/README.md)* |
 | Challenge 33 | *[Hash Map: Left Join](./Challenge33/README.md)* |
 
+
+## Author: 
+**Rakan M. Al-Madani**
+
