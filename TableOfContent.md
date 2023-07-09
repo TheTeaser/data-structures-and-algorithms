@@ -17,5 +17,6 @@
 | Challenge 28 | *[Movie Sort](./Challenge28/README.md)* |
 | Challenge 29 | *[Insertion Sort Interview](./Challenge29/README.md)* |
 | Challenge 30 | *[Hash Table](./Challenge30/README.md)* |
-| Challenge 31 | *[Hash Table Repeated Word](./Challenge31/README.md)* |
+| Challenge 31 | *[Hash Table Repeated Word](./Challenge31/README.MD)* |
 | Challenge 32 | *[Intersection Tree](./Challenge32/README.md)* |
+| Challenge 33 | *[Hash Map: Left Join](./Challenge33/README.md)* |

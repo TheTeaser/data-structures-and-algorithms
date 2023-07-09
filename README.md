@@ -23,3 +23,5 @@
 | Challenge 30 | *[Hash Table](./Challenge30/README.md)* |
 | Challenge 31 | *[Hash Table Repeated Word](./Challenge31/README.md)* |
 | Challenge 32 | *[Intersection Tree](./Challenge32/README.md)* |
+| Challenge 33 | *[Hash Map: Left Join](./Challenge33/README.md)* |
+
