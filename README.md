@@ -25,7 +25,7 @@
 | Challenge 32 | *[Intersection Tree](./Challenge32/README.md)* |
 | Challenge 33 | *[Hash Map: Left Join](./Challenge33/README.md)* |
 | Challenge 34 | *[Mock: Most repeated word.](./Challenge34/README.md)* |
-| Challenge 35 | *[Hash Map: Left Join](./Challenge35/README.md)* |
+| Challenge 35 | *[Graph](./Challenge35/README.md)* |
 
 
 ## Author: 
