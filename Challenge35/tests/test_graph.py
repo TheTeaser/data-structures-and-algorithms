@@ -40,3 +40,35 @@ def test_graph():
     # 8. Test adding edge with non-existent vertices
     with pytest.raises(ValueError):
         graph.add_edge('D', 'B')
+
+#CC36:
+
+def test_breadth_first():
+    # Create a graph
+    graph = Graph()
+
+    # Add vertices
+    vertex_a = graph.add_vertex('A')
+    vertex_b = graph.add_vertex('B')
+    vertex_c = graph.add_vertex('C')
+    vertex_d = graph.add_vertex('D')
+    vertex_e = graph.add_vertex('E')
+
+    # Add edges
+    graph.add_edge('A', 'B')
+    graph.add_edge('B', 'C')
+    graph.add_edge('B', 'D')
+    graph.add_edge('C', 'E')
+
+    # 1. Test breadth-first traversal from vertex A
+    traversal_order = graph.breadth_first('A')
+    assert traversal_order == ['A', 'B', 'C', 'D', 'E']
+
+    # 2. Test breadth-first traversal from vertex B
+    traversal_order = graph.breadth_first('B')
+    assert traversal_order == ['B', 'C', 'D', 'E']
+
+    # 3. Test breadth-first traversal from vertex E
+    traversal_order = graph.breadth_first('E')
+    assert traversal_order == ['E']
+

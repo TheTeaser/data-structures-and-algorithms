@@ -1,11 +1,19 @@
-# Challenge Class 35: Graph Implementation
+# Challenge Class 35 - 36: Graph Implementation
 Implement your own Graph. The graph should be represented as an adjacency list.
+
+CC36: Implement a BFT Algorthm.
 
 ---
 
 
 ## Whiteboard Process:
+Graph:
+
 ![Alt text](graph.png)
+
+BFT:
+![Alt text](BFT.png)
+
 ---
 ## Approach & Efficiency
 
@@ -30,7 +38,10 @@ O(1) time, O(E) space, where E is the number of edges
 ```
  O(1) time, O(1) space
 ```
-
+6. BFT():
+```
+ O(V+n) time, O(v) space
+```
 ---
 ## Solution
 [Here!](./graph.py)

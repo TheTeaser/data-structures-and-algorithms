@@ -40,3 +40,26 @@ class Graph:
         Get the total number of vertices in the graph.
         """
         return len(self.vertices)
+
+    #CC36:
+
+    def breadth_first(self, node):
+        """
+        Traverses the graph based on the breadth-first algorithm starting from the given node.
+        """
+        all_vertices = []
+        visiting_queue = [node]
+        visited_vertices = set()
+        visited_vertices.add(node)
+
+        while visiting_queue:
+            current_node = visiting_queue.pop(0)
+            all_vertices.append(current_node)
+
+            for neighbor in self.get_neighbors(current_node):
+                neighbor_node = neighbor[1]
+                if neighbor_node not in visited_vertices:
+                    visited_vertices.add(neighbor_node)
+                    visiting_queue.append(neighbor_node)
+
+        return all_vertices
