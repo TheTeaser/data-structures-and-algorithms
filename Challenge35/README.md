@@ -1,7 +1,11 @@
-# Challenge Class 35 - 36: Graph Implementation
-Implement your own Graph. The graph should be represented as an adjacency list.
+# Challenge Class 35 - 38: Graph Implementation
+CC35: Implement your own Graph. The graph should be represented as an adjacency list.
 
 CC36: Implement a BFT Algorthm.
+
+CC37: Given a business trip itinerary, and an Alaska Airlines route map, is the trip possible with direct flights? If so, how much will the total trip cost be?
+
+CC38: Conduct a depth first pre-order traversal on a graph
 
 ---
 
@@ -12,7 +16,16 @@ Graph:
 ![Alt text](graph.png)
 
 BFT:
+
 ![Alt text](BFT.png)
+
+Business Trip:
+
+![Alt text](<Screenshot 2023-07-20 154959.png>)
+
+DFS:
+
+![Alt text](DFS.png)
 
 ---
 ## Approach & Efficiency
@@ -42,6 +55,11 @@ O(1) time, O(E) space, where E is the number of edges
 ```
  O(V+n) time, O(v) space
 ```
+7. DFS():
+```
+ O(V+n) time, O(v) space
+```
+
 ---
 ## Solution
 [Here!](./graph.py)
